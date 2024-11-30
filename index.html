@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>WebPage</title>
 </head>
 <body>
     <!--INICIO NAV BAR-->
-    <div>
-        <nav id="navbar">
+    <div class="topnav">
+        <figure id="fig" class="fig">
+            <img 
+            src="/img/icon-nav.png"
+            alt="icon" 
+            id="fig-image" 
+            class="fig-image">
+        </figure>
+        <nav id="navbar" class="navbar">
             <ul>
                 <li>
-                    <a href=""></a>
-                    <source id="link">
+                    <a href="#welcome-section">Inicio</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -21,23 +30,78 @@
     <!--FIN NAV BAR-->
 
     <!--INICIO WELCOME -->
-    <section id="welcome-section">
-        <h1>Texto h1</h1>
+    <section id="welcome-section" class="welcome-section">
+        <h1>Welcome Profile</h1>
+        <p>David Avila</p>
     </section>
     <!--FIN WELCOME-->
-    
     <!--INICIO PROJECTS-->
-    <section id="projects">
-        <div class="project-title">
-            <ul>
-                <li>
-                    <a href=""></a>
-                    <source>
-                </li>
-            </ul>
+    <section id="projects" class="projects">
+        <h3 id="project-title" class="project-title">Proyectos</h3>
+        <div class="project-grid" id="project-grid">
+            <!--Inicio proyecto-->
+            <a href="" id="project-tile">
+                <img src="" alt="Proyecto 1 img">
+                <p>Proyecto 1</p>
+            </a>
+            <!--Fin proyecto-->
+            <!--Inicio proyecto-->
+            <a href="" id="project-tile">
+                <img src="" alt="Proyecto 1 img">
+                <p>Proyecto 2</p>
+            </a>
+            <!--Fin proyecto-->
+            <!--Inicio proyecto-->
+            <a href="" id="project-tile">
+                <img src="" alt="Proyecto 1 img">
+                <p>Proyecto 3</p>
+            </a>
+            <!--Fin proyecto-->
+            <!--Inicio proyecto-->
+            <a href="" id="project-tile">
+                <img src="" alt="Proyecto 1 img">
+                <p>Proyecto 4</p>
+            </a>
+            <!--Fin proyecto-->
         </div>
     </section>    
     <!--FIN PROJECTS-->
+    <!--INICIO TECNOLOGIAS-->
+    <div>
+        <h2></h2>
+        <p></p>
+    </div>
+    <div>
+        <a href="">Linkedin</a>
+        <a href="" id="profile-link" target="_blank">Github</a>
+    </div>
+    <div>
+        <figure>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </figure>
+    </div>
+    
+    <!--FIN TECNOLOGIAS-->
+    <!--Inicio Footer-->>
+    <footer id="contacto">
+        <div id="footer-c1">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="" id="footer-url"></a>
+                    <a href="" id="footer-url"></a>
+                    <a href="" id="footer-url"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Fin Footer-->>
 </body>
 
 </html>

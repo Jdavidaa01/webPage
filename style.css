@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f9; /* Fondo más suave */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+/*INICIO DE EL NAV BAR */
+.topnav{
+    background-color: #3E5DD2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.fig{
+    padding-left: 15px;
+}
+#fig-image{
+    width: 40px;
+    height: auto;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul li{
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    position: relative; /* Necesario para el subrayado */
+    padding-bottom: 4px; /* Espacio abajo para el subrayado */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
+}
+.navbar a{
+    padding: 40px;
+}
+.navbar a:hover{
+    cursor: pointer;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+    padding: 20px;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height: 2px;
+    background-color: transparent; 
+    bottom: 0; 
+    left: 0;
+    transition: background-color 0.3s ease; 
+}
+.navbar ul li a:hover {
+    color: yellow; /* Color del texto al pasar el mouse */
+}
+
+.navbar ul li a:hover::after {
+    background-color: yellow; /* Color de la línea al pasar el mouse */
+}
+/*FIN NAVBAR*/
